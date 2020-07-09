@@ -81,6 +81,9 @@ h3
 	cursor: pointer;
 	border-radius: 5px;
 }
+#buttonInput:hover {
+	opacity: 0.8;
+}
 .userText {
 	color: white;
 	font-family: inherit;
