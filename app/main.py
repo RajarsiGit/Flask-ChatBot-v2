@@ -17,6 +17,11 @@ trainer.train([
     "Hello",
 ])
 
+trainer.train([
+    "What's your name?",
+    "I'm ChatBot v2.0",
+])
+
 @app.route("/")
 def home():
     return render_template("index.html")
