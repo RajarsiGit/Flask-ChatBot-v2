@@ -83,6 +83,7 @@ h3
 }
 #buttonInput:hover {
 	opacity: 0.8;
+	border-color: #009688;
 }
 .userText {
 	color: white;
