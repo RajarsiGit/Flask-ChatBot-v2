@@ -5,14 +5,8 @@ from chatterbot.trainers import ListTrainer
 app = Flask(__name__)
  
 bot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.SQLStorageAdapter")
-trainer = ListTrainer(bot)
-trainer.train([
-	"How are you?",
-	"I am good.",
-	"That is good to hear.",
-	"Thank you",
-	"You are welcome.",
-])
+trainer = ChatterBotCorpusTrainer(bot)
+trainer.train("chatterbot.corpus.english")
 
 @app.route("/")
 def home():
