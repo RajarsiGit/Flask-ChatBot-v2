@@ -1,26 +1,12 @@
 from flask import Flask, render_template, request
 from chatterbot import ChatBot
-from chatterbot.trainers import ListTrainer
+from chatterbot.trainers import ChatterBotCorpusTrainer
 
 app = Flask(__name__)
  
 bot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.SQLStorageAdapter")
-trainer = ListTrainer(bot)
-
-trainer.train([
-    "Hi there!",
-    "Hello",
-])
-
-trainer.train([
-    "Greetings!",
-    "Hello",
-])
-
-trainer.train([
-    "What's your name?",
-    "I'm ChatBot v2.0",
-])
+trainer = ChatterBotCorpusTrainer(bot)
+trainer.train("chatterbot.corpus.english")
 
 @app.route("/")
 def home():
