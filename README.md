@@ -3,7 +3,7 @@ Chatbot using ChatterBot, chatterbot-corpus flask and Heroku deployment using gu
 
 Link: https://flask-chatbot-v2.herokuapp.com/
 
-Name of the Scientist: **# Yogen Dalal**
+# Name of the Scientist: ** Yogen Dalal**
 Photo of the Scientist: Attached below
 •	Major Contributions: ARPANET pioneer
 •	Key contributor to internetworking protocols
